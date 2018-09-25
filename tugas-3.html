@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Kumpulan Foto Hewan</title>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			$("#btn1").click(function(){
+				$("#test1").hide("slow");
+			});
+			$("#btn1").click(function(){
+				$("#test1").show("slow");
+			});
+			
+			$("#btn2").click(function(){
+				$("#test2").hide("slow");
+			});
+			$("#btn2").click(function(){
+				$("#test2").show("slow");
+			});
+			$("#btn2").click(function(){
+				$("#test2").html("<h1>TADAAAA</h1>");
+			});
+			
+			$("#btn3").click(function(){
+				$("#test3").html("<h1>BETAPA LUCUNYAA</h1>");
+			});
+		});
+		</script>
+		
+	</head>
+	<body>
+		<h1 style="text-align:center;">Selamat datang !!</h1>
+		<h4 style="text-align:center;"><i><small>Silahkan pilih gambar yang diinginkan</small></i></h4><br>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<form action="#" method="get">
+						<div class="input-group">
+							<input class="form-control" id="system-search" name="q" placeholder="Search for" required>
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+							</span>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-9">
+					<table class="table table-list-search">
+						<thead>
+							<tr>
+								<th>Jenis Hewan</th>
+								<th>Sumber</th>
+								<th>Keterangan</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Anjing 1</td>
+								
+								<td>
+								<a href="http://okdogi.com/wp-content/uploads/2016/03/ANJING-KOCAK.jpg" target="_blank"> 
+								<u>Klik disini</u></a>
+								</td>
+								<td>6 ekor anjing lucu</td>
+							</tr>
+							<tr>
+								<td>Anjing 2</td>
+								<td>
+								<a href="http://3.bp.blogspot.com/-MwQnQ9ekANE/UsWwrdKopNI/AAAAAAAADaw/uEojcycPXf8/s1600/Anjing+lucu+tidur+10.jpg" target="_blank"> 
+								<u>Klik disini</u></a>
+								</td>
+								<td>4 ekor anak anjing husky yang sedang tidur</td>
+							</tr>
+							<tr>
+								<td>Babi 1</td>
+								<td>
+								<a href="https://cdn.pixabay.com/photo/2016/06/05/10/48/piglet-1437113_960_720.jpg" target="_blank"> 
+								<u>Klik disini</u></a>
+								</td>
+								<td>Seekor bayi babi yang lucu</td>
+							</tr>
+							<tr>
+								<td>Babi 2</td>
+								<td>
+								<a href="http://2.bp.blogspot.com/-zBXKUXp29F8/UKTkAyY7CqI/AAAAAAAAAQg/iyuADUUaSMA/s1600/Anak-Babi-Main-di-Rumput-560x391.jpg" target="_blank"> 
+								<u>Klik disini</u></a>
+								</td>
+								<td>Seekor bayi babi yang melihat ke atas</td>
+							</tr>
+							<tr>
+								<td>Singa 1</td>
+								<td>
+								<a href="http://static.pulsk.com/images/2017/07/05/1499251498595cc32a025ed.jpg" target="_blank"> 
+								<u>Klik disini</u></a>
+								</td>
+								<td>Seekor anak singa bermain dengan anak harimau</td>
+							</tr>
+							<tr>
+								<td>Singa 2</td>
+								<td>
+								<a href="http://static.pulsk.com/images/2017/07/05/1499251497595cc3296ca31.jpg" target="_blank"> 
+								<u>Klik disini</u></a>
+								</td>
+								<td>Seekor anak singa yang lucu</td>
+							</tr>
+						</tbody>
+					</table>   
+				</div>
+			</div>
+		</div>
+		
+		<p id="test1">
+		<img src="http://okdogi.com/wp-content/uploads/2016/03/ANJING-KOCAK.jpg" alt="ajg">
+		<img src="http://3.bp.blogspot.com/-MwQnQ9ekANE/UsWwrdKopNI/AAAAAAAADaw/uEojcycPXf8/s1600/Anjing+lucu+tidur+10.jpg" alt="ajg2"></p>
+		<button id="btn1">Klik untuk animasi gambar anjing</button>
+		<p id="test2">
+		<img src="https://cdn.pixabay.com/photo/2016/06/05/10/48/piglet-1437113_960_720.jpg" alt="bbi">
+		<img src="http://2.bp.blogspot.com/-zBXKUXp29F8/UKTkAyY7CqI/AAAAAAAAAQg/iyuADUUaSMA/s1600/Anak-Babi-Main-di-Rumput-560x391.jpg" alt="bbi2"></p>
+		<button id="btn2">Klik untuk animasi gambar babi</button>
+		<p id="test3">
+		<img src="http://static.pulsk.com/images/2017/07/05/1499251498595cc32a025ed.jpg" alt="sng">
+		<img src="http://static.pulsk.com/images/2017/07/05/1499251497595cc3296ca31.jpg" alt="sng2"></p>
+		<button id="btn3">Klik untuk animasi gambar singa</button>
+		
+	</body>
+</html>
